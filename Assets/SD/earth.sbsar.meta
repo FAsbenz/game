@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 538b5748930947c4f968b7ece67cfebf
-timeCreated: 1507122290
+timeCreated: 1507339875
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -24,7 +24,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
+      scale: {x: 2, y: 2}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
