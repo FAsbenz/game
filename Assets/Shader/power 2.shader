@@ -94,8 +94,8 @@ Shader "Shader Forge/power" {
                 float4 _node_6060_var = tex2D(_node_6060,TRANSFORM_TEX(node_6722, _node_6060));
                 float4 _node_9375_var = tex2D(_node_9375,TRANSFORM_TEX(i.uv1, _node_9375));
                 float3 emissive = (_node_6060_var.rgb+(_node_1996.rgb*_node_9375_var.rgb));
-                float4 node_3560 = _Time + _TimeEditor;
-                float2 node_3278 = (i.uv1+node_3560.g*float2(0,-0.01));
+                float4 node_957 = _Time + _TimeEditor;
+                float2 node_3278 = (i.uv1+node_957.g*float2(0,-0.01));
                 float4 _node_4979_var = tex2D(_node_4979,TRANSFORM_TEX(node_3278, _node_4979));
                 float3 finalColor = emissive + (((1.0 - saturate((sceneZ-partZ)/_bianyuanfaguang))+pow((1.0-max(0,dot(normalDirection, viewDirection))),exp(_666))+_node_4979_var.rgb)*_node_1996.rgb);
                 return fixed4(finalColor,1);
