@@ -33,7 +33,7 @@ Shader "Shader Forge/ao" {
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform sampler2D _CameraDepthTexture;
             uniform float4 _TimeEditor;
@@ -65,8 +65,8 @@ Shader "Shader Forge/ao" {
                 float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)))) - _ProjectionParams.g);
                 float partZ = max(0,i.projPos.z - _ProjectionParams.g);
 ////// Lighting:
-                float4 node_3174 = _Time + _TimeEditor;
-                float2 node_3517 = (i.uv0+node_3174.g*float2(0.02,0));
+                float4 node_8355 = _Time + _TimeEditor;
+                float2 node_3517 = (i.uv0+node_8355.g*float2(0.02,0));
                 float4 _node_4517_var = tex2D(_node_4517,TRANSFORM_TEX(node_3517, _node_4517));
                 float3 finalColor = (_node_9624.rgb*saturate((sceneZ-partZ)/(_qiangdu*_node_4517_var.r)));
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -92,7 +92,7 @@ Shader "Shader Forge/ao" {
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             struct VertexInput {
                 float4 vertex : POSITION;
