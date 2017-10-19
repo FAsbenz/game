@@ -34,7 +34,7 @@ Shader "Shader Forge/test" {
             #include "Lighting.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float _node_5757;
             uniform float4 _lightcoller;
@@ -82,11 +82,9 @@ Shader "Shader Forge/test" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
-                float node_4051 = step(_node_5757,attenuation);
                 float node_5620 = step(dot(i.bitangentDir,viewReflectDirection),_node_6665);
-                float3 node_5863 = (node_4051*_lightcoller.rgb*(node_5620+((1.0 - node_5620)*_node_5251.rgb)));
                 float4 _node_565_var = tex2D(_node_565,TRANSFORM_TEX(i.uv0, _node_565));
-                float3 finalColor = ((node_5863*_LightColor0.rgb*_node_565_var.rgb)+_node_565_var.rgb);
+                float3 finalColor = (((step(_node_5757,attenuation)*_lightcoller.rgb*(node_5620+((1.0 - node_5620)*_node_5251.rgb)))*_LightColor0.rgb*_node_565_var.rgb)+_node_565_var.rgb);
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -110,7 +108,7 @@ Shader "Shader Forge/test" {
             #include "Lighting.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float _node_5757;
             uniform float4 _lightcoller;
@@ -158,11 +156,9 @@ Shader "Shader Forge/test" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
-                float node_4051 = step(_node_5757,attenuation);
                 float node_5620 = step(dot(i.bitangentDir,viewReflectDirection),_node_6665);
-                float3 node_5863 = (node_4051*_lightcoller.rgb*(node_5620+((1.0 - node_5620)*_node_5251.rgb)));
                 float4 _node_565_var = tex2D(_node_565,TRANSFORM_TEX(i.uv0, _node_565));
-                float3 finalColor = ((node_5863*_LightColor0.rgb*_node_565_var.rgb)+_node_565_var.rgb);
+                float3 finalColor = (((step(_node_5757,attenuation)*_lightcoller.rgb*(node_5620+((1.0 - node_5620)*_node_5251.rgb)))*_LightColor0.rgb*_node_565_var.rgb)+_node_565_var.rgb);
                 fixed4 finalRGBA = fixed4(finalColor * 1,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;

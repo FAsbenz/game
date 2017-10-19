@@ -36,7 +36,7 @@ Shader "Shader Forge/空气波" {
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _GrabTexture;
@@ -132,7 +132,7 @@ Shader "Shader Forge/空气波" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _GrabTexture;

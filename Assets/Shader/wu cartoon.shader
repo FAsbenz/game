@@ -42,7 +42,7 @@ Shader "Shader Forge/wu cartoon" {
             #include "Lighting.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float4 _TimeEditor;
             uniform float _lightstrong;
@@ -95,8 +95,8 @@ Shader "Shader Forge/wu cartoon" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_9798 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_9798.g*float2(0.1,0));
+                float4 node_6593 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_6593.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);
@@ -133,7 +133,7 @@ Shader "Shader Forge/wu cartoon" {
             #include "Lighting.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform float4 _TimeEditor;
             uniform float _lightstrong;
@@ -186,8 +186,8 @@ Shader "Shader Forge/wu cartoon" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_3749 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_3749.g*float2(0.1,0));
+                float4 node_8178 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_8178.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);

@@ -34,7 +34,7 @@ Shader "Shader Forge/glass" {
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform sampler2D _GrabTexture;
             uniform float4 _TimeEditor;
@@ -83,8 +83,8 @@ Shader "Shader Forge/glass" {
                 float3 normalDirection = i.normalDir;
                 float2 sceneUVs = float2(1,grabSign)*i.screenPos.xy*0.5+0.5;
                 float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
-                float4 node_7455 = _Time + _TimeEditor;
-                float2 node_1392 = (i.uv0+node_7455.g*float2(0,-0.1));
+                float4 node_8947 = _Time + _TimeEditor;
+                float2 node_1392 = (i.uv0+node_8947.g*float2(0,-0.1));
                 float4 _node_6572_var = tex2D(_node_6572,TRANSFORM_TEX(node_1392, _node_6572));
                 float4 node_6868 = tex2D( _GrabTexture, (0.05*(_zheshelv - 0.5)*mul(tangentTransform, viewDirection).xy + lerp(sceneUVs.rg,float2(_node_6572_var.r,_node_6572_var.g),_noize)).rg);
                 return fixed4(node_6868.rgb,0);
@@ -105,7 +105,7 @@ Shader "Shader Forge/glass" {
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
             #pragma target 3.0
             uniform sampler2D _GrabTexture;
             uniform float4 _TimeEditor;
@@ -158,8 +158,8 @@ Shader "Shader Forge/glass" {
                 float2 sceneUVs = float2(1,grabSign)*i.screenPos.xy*0.5+0.5;
                 float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
 ////// Lighting:
-                float4 node_6252 = _Time + _TimeEditor;
-                float2 node_1392 = (i.uv0+node_6252.g*float2(0,-0.1));
+                float4 node_4856 = _Time + _TimeEditor;
+                float2 node_1392 = (i.uv0+node_4856.g*float2(0,-0.1));
                 float4 _node_6572_var = tex2D(_node_6572,TRANSFORM_TEX(node_1392, _node_6572));
                 float4 node_6868 = tex2D( _GrabTexture, (0.05*(_zheshelv - 0.5)*mul(tangentTransform, viewDirection).xy + lerp(sceneUVs.rg,float2(_node_6572_var.r,_node_6572_var.g),_noize)).rg);
                 float3 finalColor = (((pow((1.0-max(0,dot(normalDirection, viewDirection))),exp(_faguangbianyuankuandu))*_faguangbianyuanqiangdu)+node_6868.rgb)*_fresnel.rgb);
