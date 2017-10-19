@@ -93,10 +93,9 @@ Shader "Shader Forge/cartoon" {
 ////// Emissive:
                 float4 _emission_var = tex2D(_emission,TRANSFORM_TEX(i.uv0, _emission));
                 float3 emissive = lerp( 0.0, _emission_var.rgb, _eswitch );
-                float node_111 = (1.0 - attenuation);
                 float node_706 = step(max(0,dot(i.bitangentDir,viewReflectDirection)),_norbianyuan);
                 float4 _diffuse_var = tex2D(_diffuse,TRANSFORM_TEX(i.uv0, _diffuse));
-                float3 finalColor = emissive + (((_darkcoler.rgb*pow(attenuation,(-0.3)))+(step(node_111,_bianyuan)*_lightstrong*(((1.0 - node_706)*_darkcoler.rgb)+node_706+_norqiangdu)*_lightcoler.rgb))*_diffuse_var.rgb*_LightColor0.rgb);
+                float3 finalColor = emissive + (((_darkcoler.rgb*pow(attenuation,(-0.3)))+(step((1.0 - attenuation),_bianyuan)*_lightstrong*(((1.0 - node_706)*_darkcoler.rgb)+node_706+_norqiangdu)*_lightcoler.rgb))*_diffuse_var.rgb*_LightColor0.rgb);
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -172,10 +171,9 @@ Shader "Shader Forge/cartoon" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
-                float node_111 = (1.0 - attenuation);
                 float node_706 = step(max(0,dot(i.bitangentDir,viewReflectDirection)),_norbianyuan);
                 float4 _diffuse_var = tex2D(_diffuse,TRANSFORM_TEX(i.uv0, _diffuse));
-                float3 finalColor = (((_darkcoler.rgb*pow(attenuation,(-0.3)))+(step(node_111,_bianyuan)*_lightstrong*(((1.0 - node_706)*_darkcoler.rgb)+node_706+_norqiangdu)*_lightcoler.rgb))*_diffuse_var.rgb*_LightColor0.rgb);
+                float3 finalColor = (((_darkcoler.rgb*pow(attenuation,(-0.3)))+(step((1.0 - attenuation),_bianyuan)*_lightstrong*(((1.0 - node_706)*_darkcoler.rgb)+node_706+_norqiangdu)*_lightcoler.rgb))*_diffuse_var.rgb*_LightColor0.rgb);
                 fixed4 finalRGBA = fixed4(finalColor * 1,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
