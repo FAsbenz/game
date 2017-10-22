@@ -59,8 +59,8 @@ Shader "Shader Forge/-ao" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float4 node_9589 = _Time + _TimeEditor;
-                float2 node_7739 = (o.uv0+node_9589.g*float2(-0.007,0));
+                float4 node_8191 = _Time + _TimeEditor;
+                float2 node_7739 = (o.uv0+node_8191.g*float2(-0.007,0));
                 float4 node_1804 = tex2Dlod(_node_5770,float4(TRANSFORM_TEX(node_7739, _node_5770),0.0,0));
                 float node_643 = 0.0;
                 v.vertex.xyz += (node_643 + ( (node_1804.rgb - _min) * (1.0 - node_643) ) / (_max - _min));
@@ -76,8 +76,8 @@ Shader "Shader Forge/-ao" {
                 float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)))) - _ProjectionParams.g);
                 float partZ = max(0,i.projPos.z - _ProjectionParams.g);
 ////// Lighting:
-                float4 node_9589 = _Time + _TimeEditor;
-                float2 node_3517 = (i.uv0+node_9589.g*float2(0.1,0));
+                float4 node_8191 = _Time + _TimeEditor;
+                float2 node_3517 = (i.uv0+node_8191.g*float2(0.1,0));
                 float4 node_4517 = tex2D(_node_5770,TRANSFORM_TEX(node_3517, _node_5770));
                 float3 finalColor = (_node_9624.rgb*(1.0 - saturate((sceneZ-partZ)/(_qiangdu*node_4517.r)))*saturate((sceneZ-partZ)/_bianyuanxiaoshi));
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -120,8 +120,8 @@ Shader "Shader Forge/-ao" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float4 node_9631 = _Time + _TimeEditor;
-                float2 node_7739 = (o.uv0+node_9631.g*float2(-0.007,0));
+                float4 node_7314 = _Time + _TimeEditor;
+                float2 node_7739 = (o.uv0+node_7314.g*float2(-0.007,0));
                 float4 node_1804 = tex2Dlod(_node_5770,float4(TRANSFORM_TEX(node_7739, _node_5770),0.0,0));
                 float node_643 = 0.0;
                 v.vertex.xyz += (node_643 + ( (node_1804.rgb - _min) * (1.0 - node_643) ) / (_max - _min));

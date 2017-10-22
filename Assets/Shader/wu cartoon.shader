@@ -95,8 +95,8 @@ Shader "Shader Forge/wu cartoon" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_283 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_283.g*float2(0.1,0));
+                float4 node_1803 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_1803.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);
@@ -186,8 +186,8 @@ Shader "Shader Forge/wu cartoon" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_7746 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_7746.g*float2(0.1,0));
+                float4 node_7918 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_7918.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);

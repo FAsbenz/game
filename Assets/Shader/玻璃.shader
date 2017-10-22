@@ -3,17 +3,18 @@
 // Shader created with Shader Forge v1.35 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:9361,x:33320,y:32560,varname:node_9361,prsc:2|spec-7230-OUT,gloss-1996-OUT,normal-5477-RGB,emission-8768-OUT;n:type:ShaderForge.SFN_SceneColor,id:8029,x:32444,y:32976,varname:node_8029,prsc:2|UVIN-6363-UVOUT;n:type:ShaderForge.SFN_ScreenPos,id:6580,x:31982,y:32559,varname:node_6580,prsc:2,sctp:2;n:type:ShaderForge.SFN_Lerp,id:8525,x:32464,y:32774,varname:node_8525,prsc:2|A-6580-UVOUT,B-5477-RGB,T-7673-OUT;n:type:ShaderForge.SFN_Slider,id:7212,x:31744,y:32940,ptovrint:False,ptlb:zhe she,ptin:_zheshe,varname:node_7212,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:10,max:10;n:type:ShaderForge.SFN_Tex2d,id:5477,x:32303,y:32447,ptovrint:False,ptlb:node_5477,ptin:_node_5477,varname:node_5477,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:be3e83bd31366e843980a0fcf24f3bbd,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Fresnel,id:8443,x:32263,y:33201,varname:node_8443,prsc:2|EXP-5175-OUT;n:type:ShaderForge.SFN_Parallax,id:6363,x:32281,y:32976,varname:node_6363,prsc:2|UVIN-8525-OUT,HEI-7212-OUT;n:type:ShaderForge.SFN_Add,id:8768,x:33064,y:32741,varname:node_8768,prsc:2|A-4239-OUT,B-5626-OUT;n:type:ShaderForge.SFN_Slider,id:6081,x:31621,y:33262,ptovrint:False,ptlb:fresnel,ptin:_fresnel,varname:node_6081,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2797129,max:7;n:type:ShaderForge.SFN_Exp,id:5175,x:31963,y:33259,varname:node_5175,prsc:2,et:0|IN-6081-OUT;n:type:ShaderForge.SFN_Multiply,id:4239,x:32769,y:32666,varname:node_4239,prsc:2|A-4240-RGB,B-8029-RGB;n:type:ShaderForge.SFN_Color,id:4240,x:32565,y:32527,ptovrint:False,ptlb:node_4240,ptin:_node_4240,varname:node_4240,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Slider,id:7230,x:32885,y:32377,ptovrint:False,ptlb:specular,ptin:_specular,varname:node_7230,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1996,x:32875,y:32476,ptovrint:False,ptlb:glass,ptin:_glass,varname:node_1996,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Multiply,id:5626,x:32769,y:32883,varname:node_5626,prsc:2|A-4240-RGB,B-8443-OUT;n:type:ShaderForge.SFN_Slider,id:7673,x:31831,y:32794,ptovrint:False,ptlb:noise,ptin:_noise,varname:node_7673,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.1891323,max:1;proporder:7230-1996-7212-7673-5477-6081-4240;pass:END;sub:END;*/
+/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:9361,x:33209,y:32712,varname:node_9361,prsc:2|spec-3293-OUT,gloss-6814-OUT,normal-6572-RGB,emission-1822-OUT,custl-1822-OUT,olwid-9786-OUT;n:type:ShaderForge.SFN_SceneColor,id:6868,x:32663,y:33064,varname:node_6868,prsc:2|UVIN-7603-UVOUT;n:type:ShaderForge.SFN_Parallax,id:7603,x:32489,y:33064,varname:node_7603,prsc:2|UVIN-5444-OUT,HEI-6580-OUT;n:type:ShaderForge.SFN_Slider,id:6580,x:32273,y:33220,ptovrint:False,ptlb:zhe she lv,ptin:_zheshelv,varname:node_6580,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:-10,cur:-10,max:10;n:type:ShaderForge.SFN_Fresnel,id:4959,x:32159,y:32528,varname:node_4959,prsc:2;n:type:ShaderForge.SFN_Power,id:4591,x:32338,y:32528,varname:node_4591,prsc:2|VAL-4959-OUT,EXP-6122-OUT;n:type:ShaderForge.SFN_Exp,id:6122,x:32338,y:32381,varname:node_6122,prsc:2,et:0|IN-8066-OUT;n:type:ShaderForge.SFN_Slider,id:8066,x:32002,y:32438,ptovrint:False,ptlb:fa guang bian yuan kuandu,ptin:_faguangbianyuankuandu,varname:node_8066,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5660156,max:1;n:type:ShaderForge.SFN_Multiply,id:2622,x:32715,y:32397,varname:node_2622,prsc:2|A-4591-OUT,B-1417-OUT;n:type:ShaderForge.SFN_Slider,id:1417,x:32400,y:32274,ptovrint:False,ptlb:fa guang bian yuan qiang du,ptin:_faguangbianyuanqiangdu,varname:node_1417,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Add,id:3874,x:32896,y:32732,varname:node_3874,prsc:2|A-2622-OUT,B-6868-RGB;n:type:ShaderForge.SFN_ScreenPos,id:5887,x:31957,y:32675,varname:node_5887,prsc:2,sctp:2;n:type:ShaderForge.SFN_Append,id:4322,x:31770,y:32876,varname:node_4322,prsc:2|A-6572-R,B-6572-G;n:type:ShaderForge.SFN_Tex2d,id:6572,x:31582,y:32859,ptovrint:False,ptlb:normal,ptin:_normal,varname:node_6572,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:be3e83bd31366e843980a0fcf24f3bbd,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Lerp,id:5444,x:32047,y:32873,varname:node_5444,prsc:2|A-5887-UVOUT,B-4322-OUT,T-9984-OUT;n:type:ShaderForge.SFN_Slider,id:9984,x:31872,y:33072,ptovrint:False,ptlb:noize,ptin:_noize,varname:node_9984,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.6666672,max:1;n:type:ShaderForge.SFN_Multiply,id:1822,x:33006,y:32845,varname:node_1822,prsc:2|A-3874-OUT,B-5455-RGB;n:type:ShaderForge.SFN_Color,id:5455,x:32822,y:32965,ptovrint:False,ptlb:fresnel,ptin:_fresnel,varname:node_5455,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Vector1,id:9786,x:33022,y:33009,varname:node_9786,prsc:2,v1:0;n:type:ShaderForge.SFN_Slider,id:3293,x:32896,y:32565,ptovrint:False,ptlb:M,ptin:_M,varname:node_3293,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:6814,x:32868,y:32663,ptovrint:False,ptlb:S,ptin:_S,varname:node_6814,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;proporder:3293-6814-6572-9984-6580-5455-8066-1417;pass:END;sub:END;*/
 
-Shader "Shader Forge/空气波" {
+Shader "Shader Forge/glass" {
     Properties {
-        _specular ("specular", Range(0, 1)) = 0
-        _glass ("glass", Range(0, 1)) = 0
-        _zheshe ("zhe she", Range(0, 10)) = 10
-        _noise ("noise", Range(0, 1)) = 0.1891323
-        _node_5477 ("node_5477", 2D) = "bump" {}
-        _fresnel ("fresnel", Range(0, 7)) = 0.2797129
-        _node_4240 ("node_4240", Color) = (1,1,1,1)
+        _M ("M", Range(0, 1)) = 0
+        _S ("S", Range(0, 1)) = 0
+        _normal ("normal", 2D) = "bump" {}
+        _noize ("noize", Range(0, 1)) = 0.6666672
+        _zheshelv ("zhe she lv", Range(-10, 10)) = -10
+        _fresnel ("fresnel", Color) = (0.5,0.5,0.5,1)
+        _faguangbianyuankuandu ("fa guang bian yuan kuandu", Range(0, 1)) = 0.5660156
+        _faguangbianyuanqiangdu ("fa guang bian yuan qiang du", Range(0, 1)) = 1
     }
     SubShader {
         Tags {
@@ -22,6 +23,40 @@ Shader "Shader Forge/空气波" {
             "RenderType"="Transparent"
         }
         GrabPass{ }
+        Pass {
+            Name "Outline"
+            Tags {
+            }
+            Cull Front
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+            #pragma fragmentoption ARB_precision_hint_fastest
+            #pragma multi_compile_shadowcaster
+            #pragma multi_compile_fog
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
+            #pragma target 3.0
+            struct VertexInput {
+                float4 vertex : POSITION;
+                float3 normal : NORMAL;
+            };
+            struct VertexOutput {
+                float4 pos : SV_POSITION;
+                UNITY_FOG_COORDS(0)
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.pos = UnityObjectToClipPos(float4(v.vertex.xyz + v.normal*0.0,1) );
+                UNITY_TRANSFER_FOG(o,o.pos);
+                return o;
+            }
+            float4 frag(VertexOutput i) : COLOR {
+                return fixed4(float3(0,0,0),0);
+            }
+            ENDCG
+        }
         Pass {
             Name "FORWARD"
             Tags {
@@ -40,13 +75,14 @@ Shader "Shader Forge/空气波" {
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _GrabTexture;
-            uniform float _zheshe;
-            uniform sampler2D _node_5477; uniform float4 _node_5477_ST;
-            uniform float _fresnel;
-            uniform float4 _node_4240;
-            uniform float _specular;
-            uniform float _glass;
-            uniform float _noise;
+            uniform float _zheshelv;
+            uniform float _faguangbianyuankuandu;
+            uniform float _faguangbianyuanqiangdu;
+            uniform sampler2D _normal; uniform float4 _normal_ST;
+            uniform float _noize;
+            uniform float4 _fresnel;
+            uniform float _M;
+            uniform float _S;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -87,8 +123,8 @@ Shader "Shader Forge/空气波" {
                 i.screenPos.y *= _ProjectionParams.x;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _node_5477_var = UnpackNormal(tex2D(_node_5477,TRANSFORM_TEX(i.uv0, _node_5477)));
-                float3 normalLocal = _node_5477_var.rgb;
+                float3 _normal_var = UnpackNormal(tex2D(_normal,TRANSFORM_TEX(i.uv0, _normal)));
+                float3 normalLocal = _normal_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float2 sceneUVs = float2(1,grabSign)*i.screenPos.xy*0.5+0.5;
                 float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
@@ -99,15 +135,16 @@ Shader "Shader Forge/空气波" {
                 float attenuation = 1;
                 float3 attenColor = attenuation * _LightColor0.xyz;
 ///////// Gloss:
-                float gloss = _glass;
+                float gloss = _S;
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = saturate(dot( normalDirection, lightDirection ));
-                float3 specularColor = float3(_specular,_specular,_specular);
+                float3 specularColor = float3(_M,_M,_M);
                 float3 directSpecular = attenColor * pow(max(0,dot(halfDirection,normalDirection)),specPow)*specularColor;
                 float3 specular = directSpecular;
 ////// Emissive:
-                float3 emissive = ((_node_4240.rgb*tex2D( _GrabTexture, (0.05*(_zheshe - 0.5)*mul(tangentTransform, viewDirection).xy + lerp(float3(sceneUVs.rg,0.0),_node_5477_var.rgb,_noise)).rg).rgb)+(_node_4240.rgb*pow(1.0-max(0,dot(normalDirection, viewDirection)),exp(_fresnel))));
+                float3 node_1822 = (((pow((1.0-max(0,dot(normalDirection, viewDirection))),exp(_faguangbianyuankuandu))*_faguangbianyuanqiangdu)+tex2D( _GrabTexture, (0.05*(_zheshelv - 0.5)*mul(tangentTransform, viewDirection).xy + lerp(sceneUVs.rg,float2(_normal_var.r,_normal_var.g),_noize)).rg).rgb)*_fresnel.rgb);
+                float3 emissive = node_1822;
 /// Final Color:
                 float3 finalColor = specular + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -136,13 +173,14 @@ Shader "Shader Forge/空气波" {
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _GrabTexture;
-            uniform float _zheshe;
-            uniform sampler2D _node_5477; uniform float4 _node_5477_ST;
-            uniform float _fresnel;
-            uniform float4 _node_4240;
-            uniform float _specular;
-            uniform float _glass;
-            uniform float _noise;
+            uniform float _zheshelv;
+            uniform float _faguangbianyuankuandu;
+            uniform float _faguangbianyuanqiangdu;
+            uniform sampler2D _normal; uniform float4 _normal_ST;
+            uniform float _noize;
+            uniform float4 _fresnel;
+            uniform float _M;
+            uniform float _S;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -185,8 +223,8 @@ Shader "Shader Forge/空气波" {
                 i.screenPos.y *= _ProjectionParams.x;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _node_5477_var = UnpackNormal(tex2D(_node_5477,TRANSFORM_TEX(i.uv0, _node_5477)));
-                float3 normalLocal = _node_5477_var.rgb;
+                float3 _normal_var = UnpackNormal(tex2D(_normal,TRANSFORM_TEX(i.uv0, _normal)));
+                float3 normalLocal = _normal_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float2 sceneUVs = float2(1,grabSign)*i.screenPos.xy*0.5+0.5;
                 float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
@@ -197,11 +235,11 @@ Shader "Shader Forge/空气波" {
                 float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
 ///////// Gloss:
-                float gloss = _glass;
+                float gloss = _S;
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = saturate(dot( normalDirection, lightDirection ));
-                float3 specularColor = float3(_specular,_specular,_specular);
+                float3 specularColor = float3(_M,_M,_M);
                 float3 directSpecular = attenColor * pow(max(0,dot(halfDirection,normalDirection)),specPow)*specularColor;
                 float3 specular = directSpecular;
 /// Final Color:
