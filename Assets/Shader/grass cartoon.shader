@@ -86,8 +86,7 @@ Shader "Shader Forge/grass cartoon" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
-                float3 node_4695 = ((_darkcoler.rgb+(step(_bianyuan,attenuation)*_lightstrong*_lightcoler.rgb))*_LightColor0.rgb*(i.uv0.g+0.5));
-                float3 finalColor = node_4695;
+                float3 finalColor = ((_darkcoler.rgb+(step(_bianyuan,attenuation)*_lightstrong*_lightcoler.rgb))*_LightColor0.rgb*(i.uv0.g+0.5));
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -161,8 +160,7 @@ Shader "Shader Forge/grass cartoon" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
-                float3 node_4695 = ((_darkcoler.rgb+(step(_bianyuan,attenuation)*_lightstrong*_lightcoler.rgb))*_LightColor0.rgb*(i.uv0.g+0.5));
-                float3 finalColor = node_4695;
+                float3 finalColor = ((_darkcoler.rgb+(step(_bianyuan,attenuation)*_lightstrong*_lightcoler.rgb))*_LightColor0.rgb*(i.uv0.g+0.5));
                 fixed4 finalRGBA = fixed4(finalColor * 1,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
