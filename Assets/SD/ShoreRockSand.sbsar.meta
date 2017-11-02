@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c9b293180a55a2d4281a3be18da1aefb
-timeCreated: 1506753681
+timeCreated: 1509520752
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -302,7 +302,7 @@ SubstanceImporter:
       - _UVSec: 0
       - _ZWrite: 1
       colors:
-      - _Color: {r: 1, g: 1, b: 1, a: 1}
+      - _Color: {r: 0, g: 0, b: 0, a: 1}
       - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     textureParameters:
     - name: MainComposition_basecolor
@@ -337,15 +337,15 @@ SubstanceImporter:
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 2207167377
+    - shaderProp: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 2182118211
     - shaderProp: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 2207167383
     - shaderProp: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 2181792713
-    - shaderProp: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 2182118211
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e8b1b8e13dc75a04f8f64b7cac230cbd
-timeCreated: 1509292093
+timeCreated: 1509537413
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -78,7 +78,7 @@ SubstanceImporter:
       - _Metallic: 0
       - _Mode: 0
       - _OcclusionStrength: 1
-      - _Parallax: 0.0171
+      - _Parallax: 0.0319
       - _SmoothnessTextureChannel: 0
       - _SpecularHighlights: 1
       - _SrcBlend: 1
@@ -116,12 +116,12 @@ SubstanceImporter:
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 2785874572
-    - shaderProp: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 2785874570
     - shaderProp: _ParallaxMap
       material: {instanceID: 0}
       baseUID: 2748104080
+    - shaderProp: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 2785874570
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
