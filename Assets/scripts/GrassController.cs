@@ -17,7 +17,7 @@ public class GrassController : MonoBehaviour {
         Vector3 pos = player.transform.position;
         Debug.Log(pos.ToString());
         grass.SetFloat("_x", pos.x);
-        grass.SetFloat("_y", 0);
+		grass.SetFloat("_y", pos.y);
         grass.SetFloat("_z", pos.z);
 	}
 }
