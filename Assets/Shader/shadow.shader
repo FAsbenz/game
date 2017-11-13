@@ -3,7 +3,7 @@
 // Shader created with Shader Forge v1.35 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:False,enco:False,rmgx:True,imps:False,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:9361,x:33742,y:32664,varname:node_9361,prsc:2|diff-4057-R,spec-6818-OUT,gloss-9758-OUT,normal-1665-RGB,transm-3504-OUT,amspl-5965-OUT,voffset-2026-OUT;n:type:ShaderForge.SFN_Append,id:7975,x:32232,y:32749,varname:node_7975,prsc:2|A-2302-OUT,B-8281-OUT;n:type:ShaderForge.SFN_Vector1,id:8281,x:31968,y:32884,varname:node_8281,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Tex2d,id:7708,x:32445,y:32765,ptovrint:False,ptlb:Tou guang,ptin:_Touguang,varname:node_7708,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:a83f18bd1268e0f498974f79cae51144,ntxv:0,isnm:False|UVIN-7975-OUT;n:type:ShaderForge.SFN_NormalVector,id:2653,x:31484,y:32801,prsc:2,pt:True;n:type:ShaderForge.SFN_LightVector,id:7110,x:31484,y:32581,varname:node_7110,prsc:2;n:type:ShaderForge.SFN_Dot,id:2302,x:31687,y:32695,varname:node_2302,prsc:2,dt:4|A-7110-OUT,B-2653-OUT;n:type:ShaderForge.SFN_Tex2d,id:1665,x:33252,y:32703,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:node_1665,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:d5f73501b2f2e354b91889cc5a859ee4,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4057,x:33240,y:33180,ptovrint:False,ptlb:Bace,ptin:_Bace,varname:node_4057,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:8691,x:33127,y:32416,ptovrint:False,ptlb:M,ptin:_M,varname:node_8691,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Slider,id:1698,x:33089,y:32605,ptovrint:False,ptlb:R,ptin:_R,varname:node_1698,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Tex2d,id:946,x:33191,y:32205,ptovrint:False,ptlb:M T,ptin:_MT,varname:node_946,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6818,x:33543,y:32309,varname:node_6818,prsc:2|A-946-R,B-8691-OUT;n:type:ShaderForge.SFN_Multiply,id:3504,x:32783,y:32762,varname:node_3504,prsc:2|A-7708-RGB,B-7791-OUT;n:type:ShaderForge.SFN_Slider,id:7791,x:32421,y:32971,ptovrint:False,ptlb:tou guang,ptin:_touguang,varname:node_7791,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:2,max:24;n:type:ShaderForge.SFN_Vector1,id:750,x:33252,y:33011,varname:node_750,prsc:2,v1:0.001;n:type:ShaderForge.SFN_Depth,id:4725,x:33138,y:32894,varname:node_4725,prsc:2;n:type:ShaderForge.SFN_Multiply,id:5965,x:33433,y:32864,varname:node_5965,prsc:2|A-4725-OUT,B-750-OUT;n:type:ShaderForge.SFN_Multiply,id:9758,x:33494,y:32513,varname:node_9758,prsc:2|A-946-R,B-1698-OUT,C-4725-OUT;n:type:ShaderForge.SFN_Multiply,id:2026,x:33566,y:33028,varname:node_2026,prsc:2|A-946-R,B-2093-OUT;n:type:ShaderForge.SFN_Vector1,id:2093,x:33477,y:33161,varname:node_2093,prsc:2,v1:0.01;proporder:4057-1665-7708-7791-946-1698-8691;pass:END;sub:END;*/
+/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:False,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:9361,x:33742,y:32664,varname:node_9361,prsc:2|diff-4057-R,spec-6818-OUT,gloss-9758-OUT,normal-1665-RGB,transm-3504-OUT,voffset-2026-OUT;n:type:ShaderForge.SFN_Append,id:7975,x:32232,y:32749,varname:node_7975,prsc:2|A-2302-OUT,B-8281-OUT;n:type:ShaderForge.SFN_Vector1,id:8281,x:31968,y:32884,varname:node_8281,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Tex2d,id:7708,x:32445,y:32765,ptovrint:False,ptlb:Tou guang,ptin:_Touguang,varname:node_7708,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:a83f18bd1268e0f498974f79cae51144,ntxv:0,isnm:False|UVIN-7975-OUT;n:type:ShaderForge.SFN_NormalVector,id:2653,x:31484,y:32801,prsc:2,pt:True;n:type:ShaderForge.SFN_LightVector,id:7110,x:31484,y:32581,varname:node_7110,prsc:2;n:type:ShaderForge.SFN_Dot,id:2302,x:31687,y:32695,varname:node_2302,prsc:2,dt:4|A-7110-OUT,B-2653-OUT;n:type:ShaderForge.SFN_Tex2d,id:1665,x:33252,y:32703,ptovrint:False,ptlb:Normal,ptin:_Normal,varname:node_1665,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:d5f73501b2f2e354b91889cc5a859ee4,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:4057,x:33240,y:33180,ptovrint:False,ptlb:Bace,ptin:_Bace,varname:node_4057,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:8691,x:33127,y:32416,ptovrint:False,ptlb:M,ptin:_M,varname:node_8691,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Slider,id:1698,x:33089,y:32605,ptovrint:False,ptlb:R,ptin:_R,varname:node_1698,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Tex2d,id:946,x:33191,y:32205,ptovrint:False,ptlb:M T,ptin:_MT,varname:node_946,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6818,x:33484,y:32304,varname:node_6818,prsc:2|A-946-R,B-8691-OUT;n:type:ShaderForge.SFN_Multiply,id:3504,x:32783,y:32762,varname:node_3504,prsc:2|A-7708-RGB,B-7791-OUT;n:type:ShaderForge.SFN_Slider,id:7791,x:32421,y:32971,ptovrint:False,ptlb:tou guang,ptin:_touguang,varname:node_7791,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:2,max:24;n:type:ShaderForge.SFN_Multiply,id:9758,x:33469,y:32545,varname:node_9758,prsc:2|A-1698-OUT,B-946-R,C-7857-OUT;n:type:ShaderForge.SFN_Multiply,id:2026,x:33566,y:33028,varname:node_2026,prsc:2|A-946-R,B-2093-OUT;n:type:ShaderForge.SFN_Vector1,id:2093,x:33477,y:33161,varname:node_2093,prsc:2,v1:0.01;n:type:ShaderForge.SFN_Depth,id:7857,x:32803,y:32415,varname:node_7857,prsc:2;proporder:4057-1665-7708-7791-946-1698-8691;pass:END;sub:END;*/
 
 Shader "Shader Forge/shadow" {
     Properties {
@@ -31,6 +31,7 @@ Shader "Shader Forge/shadow" {
             #pragma fragment frag
             #define UNITY_PASS_FORWARDBASE
             #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
+            #define _GLOSSYENV 1
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #include "Lighting.cginc"
@@ -121,8 +122,8 @@ Shader "Shader Forge/shadow" {
                 float InvPi = 0.31830988618;
 ///////// Gloss:
                 float4 _MT_var = tex2D(_MT,TRANSFORM_TEX(i.uv0, _MT));
-                float gloss = 1.0 - (_MT_var.r*_R*partZ); // Convert roughness to gloss
-                float perceptualRoughness = (_MT_var.r*_R*partZ);
+                float gloss = 1.0 - (_R*_MT_var.r*partZ); // Convert roughness to gloss
+                float perceptualRoughness = (_R*_MT_var.r*partZ);
                 float roughness = perceptualRoughness * perceptualRoughness;
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
@@ -147,6 +148,18 @@ Shader "Shader Forge/shadow" {
                 #else
                     d.ambient = i.ambientOrLightmapUV;
                 #endif
+                #if UNITY_SPECCUBE_BLENDING || UNITY_SPECCUBE_BOX_PROJECTION
+                    d.boxMin[0] = unity_SpecCube0_BoxMin;
+                    d.boxMin[1] = unity_SpecCube1_BoxMin;
+                #endif
+                #if UNITY_SPECCUBE_BOX_PROJECTION
+                    d.boxMax[0] = unity_SpecCube0_BoxMax;
+                    d.boxMax[1] = unity_SpecCube1_BoxMax;
+                    d.probePosition[0] = unity_SpecCube0_ProbePosition;
+                    d.probePosition[1] = unity_SpecCube1_ProbePosition;
+                #endif
+                d.probeHDR[0] = unity_SpecCube0_HDR;
+                d.probeHDR[1] = unity_SpecCube1_HDR;
                 Unity_GlossyEnvironmentData ugls_en_data;
                 ugls_en_data.roughness = 1.0 - gloss;
                 ugls_en_data.reflUVW = viewReflectDirection;
@@ -155,7 +168,6 @@ Shader "Shader Forge/shadow" {
                 lightColor = gi.light.color;
 ////// Specular:
                 float NdotL = saturate(dot( normalDirection, lightDirection ));
-                float node_5965 = (partZ*0.001);
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = (_MT_var.r*_M);
                 float specularMonochrome;
@@ -185,7 +197,7 @@ Shader "Shader Forge/shadow" {
                 specularPBL *= any(specularColor) ? 1.0 : 0.0;
                 float3 directSpecular = attenColor*specularPBL*FresnelTerm(specularColor, LdotH);
                 half grazingTerm = saturate( gloss + specularMonochrome );
-                float3 indirectSpecular = (0 + float3(node_5965,node_5965,node_5965));
+                float3 indirectSpecular = (gi.indirect.specular);
                 indirectSpecular *= FresnelLerp (specularColor, grazingTerm, NdotV);
                 indirectSpecular *= surfaceReduction;
                 float3 specular = (directSpecular + indirectSpecular);
@@ -225,6 +237,7 @@ Shader "Shader Forge/shadow" {
             #pragma fragment frag
             #define UNITY_PASS_FORWARDADD
             #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
+            #define _GLOSSYENV 1
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #include "Lighting.cginc"
@@ -303,8 +316,8 @@ Shader "Shader Forge/shadow" {
                 float InvPi = 0.31830988618;
 ///////// Gloss:
                 float4 _MT_var = tex2D(_MT,TRANSFORM_TEX(i.uv0, _MT));
-                float gloss = 1.0 - (_MT_var.r*_R*partZ); // Convert roughness to gloss
-                float perceptualRoughness = (_MT_var.r*_R*partZ);
+                float gloss = 1.0 - (_R*_MT_var.r*partZ); // Convert roughness to gloss
+                float perceptualRoughness = (_R*_MT_var.r*partZ);
                 float roughness = perceptualRoughness * perceptualRoughness;
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
@@ -366,6 +379,7 @@ Shader "Shader Forge/shadow" {
             #pragma fragment frag
             #define UNITY_PASS_SHADOWCASTER
             #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
+            #define _GLOSSYENV 1
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
             #include "UnityPBSLighting.cginc"

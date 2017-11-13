@@ -57,8 +57,8 @@ Shader "Shader Forge/ao" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float4 node_6296 = _Time + _TimeEditor;
-                float2 node_7739 = (o.uv0+node_6296.g*float2(-0.02,0));
+                float4 node_8088 = _Time + _TimeEditor;
+                float2 node_7739 = (o.uv0+node_8088.g*float2(-0.02,0));
                 float4 node_1804 = tex2Dlod(_node_5770,float4(TRANSFORM_TEX(node_7739, _node_5770),0.0,0));
                 float node_1087 = ((node_1804.r*_bodong)+_gaodu);
                 v.vertex.xyz += float3(node_1087,node_1087,node_1087);
@@ -74,8 +74,8 @@ Shader "Shader Forge/ao" {
                 float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)))) - _ProjectionParams.g);
                 float partZ = max(0,i.projPos.z - _ProjectionParams.g);
 ////// Lighting:
-                float4 node_6296 = _Time + _TimeEditor;
-                float2 node_3517 = (i.uv0+node_6296.g*float2(0.02,0));
+                float4 node_8088 = _Time + _TimeEditor;
+                float2 node_3517 = (i.uv0+node_8088.g*float2(0.02,0));
                 float4 node_4517 = tex2D(_node_5770,TRANSFORM_TEX(node_3517, _node_5770));
                 float3 finalColor = (_node_9624.rgb*saturate((sceneZ-partZ)/(_qiangdu*node_4517.r)));
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -118,8 +118,8 @@ Shader "Shader Forge/ao" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float4 node_746 = _Time + _TimeEditor;
-                float2 node_7739 = (o.uv0+node_746.g*float2(-0.02,0));
+                float4 node_3004 = _Time + _TimeEditor;
+                float2 node_7739 = (o.uv0+node_3004.g*float2(-0.02,0));
                 float4 node_1804 = tex2Dlod(_node_5770,float4(TRANSFORM_TEX(node_7739, _node_5770),0.0,0));
                 float node_1087 = ((node_1804.r*_bodong)+_gaodu);
                 v.vertex.xyz += float3(node_1087,node_1087,node_1087);
