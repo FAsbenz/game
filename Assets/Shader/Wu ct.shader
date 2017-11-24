@@ -123,8 +123,8 @@ Shader "Shader Forge/wu ct" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_4604 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_4604.g*float2(0.1,0));
+                float4 node_5896 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_5896.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);
@@ -291,8 +291,8 @@ Shader "Shader Forge/wu ct" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(i.uv0, _Normals)));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_4787 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_4787.g*float2(0.1,0));
+                float4 node_2738 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_2738.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 normalLocal = lerp(float3(0,0,0),_Normals_var.rgb,node_7896);
@@ -408,8 +408,8 @@ Shader "Shader Forge/wu ct" {
                 float4 _emission_var = tex2D(_emission,TRANSFORM_TEX(i.uv0, _emission));
                 float4 _bacemap_var = tex2D(_bacemap,TRANSFORM_TEX(i.uv0, _bacemap));
                 float node_1947 = dot(_bacemap_var.rgb,float3(0.3,0.59,0.11));
-                float4 node_6489 = _Time + _TimeEditor;
-                float2 node_1103 = (i.uv0+node_6489.g*float2(0.1,0));
+                float4 node_1316 = _Time + _TimeEditor;
+                float2 node_1103 = (i.uv0+node_1316.g*float2(0.1,0));
                 float4 _wu_var = tex2D(_wu,TRANSFORM_TEX(node_1103, _wu));
                 float node_7896 = saturate(((lerp( node_1947, (1.0 - node_1947), _ZHENFAN )*exp(_WUDAXIAO))-_wu_var.r));
                 float3 node_5043 = (lerp(_wucoler.rgb,_bacemap_var.rgb,node_7896)*(_darkcoler.rgb+(step(_bianyuan,attenuation)*_lightstrong*(_norqiangdu+step(_norbianyuan,dot(lightDirection,viewReflectDirection)))*_lightcoler.rgb)));
